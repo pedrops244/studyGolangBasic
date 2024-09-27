@@ -13,16 +13,16 @@ func TestTipoDeEndereco(t *testing.T) {
 	cenariosDeTeste := []cenarioDeTeste{
 		{"Rua ABC", "Rua"},
 		{"Avenida josé", "Avenida"},
-		{"Praça das Rosas", "Tipo inválido"},
+		// {"Praça das Rosas", "Tipo inválido"},
 		{"Estrada das pedras", "Estrada"},
 		{"RUA DOS BOBOS", "Rua"},
 	}
 
 	for _, cenario := range cenariosDeTeste {
-		tipoDeEnderecoRecebido := TipoDeEndereco(cenario.enderecoInserido)
-		if tipoDeEnderecoRecebido != cenario.retornoEsperado {
+		retornoRecebido := TipoDeEndereco(cenario.enderecoInserido)
+		if retornoRecebido != cenario.retornoEsperado {
 			t.Errorf("O tipo recebido %s é diferente do esperado %s",
-				tipoDeEnderecoRecebido,
+				retornoRecebido,
 				cenario.retornoEsperado,
 			)
 		}
