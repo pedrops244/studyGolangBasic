@@ -1,7 +1,6 @@
 package enredecos
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -18,7 +17,7 @@ func TipoDeEndereco(endereco string) string {
 		}
 	}
 	if enderecoTemUmTipoValido {
-		return fmt.Sprintln(strings.Title(primeiraPalavraDoEndereco), "é um tipo válido")
+		return strings.Title(primeiraPalavraDoEndereco)
 	}
 
 	return "Tipo inválido"

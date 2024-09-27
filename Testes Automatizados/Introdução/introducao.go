@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"introducao.go/enredecos"
+	enredecos "introducao.go/enderecos"
 )
 
 func main() {
